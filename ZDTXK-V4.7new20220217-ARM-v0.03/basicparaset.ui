@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>basicparasetDialog</class>
+ <widget class="QWidget" name="basicparasetDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>549</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>基本参数设置</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>30</y>
+     <width>161</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>分柜选择</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QCheckBox" name="checkBox_Sub1">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>分柜1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_Sub2">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>分柜2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_Sub3">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>分柜3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_Sub4">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>分柜4</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>13</y>
+     <width>352</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>阈值参数</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>331</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>分柜1输出电流上限(A)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="mylineedit" name="lineEdit_SubCurrentUp">
+         <property name="text">
+          <string>850.0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>分柜2输出电流上限(A)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="mylineedit" name="lineEdit_SubCurrentUp_2">
+         <property name="text">
+          <string>850.0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>分柜3输出电流上限(A)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="mylineedit" name="lineEdit_SubCurrentUp_3">
+         <property name="text">
+          <string>850.0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>分柜4输出电流上限(A)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="mylineedit" name="lineEdit_SubCurrentUp_4">
+         <property name="text">
+          <string>850.0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>功放总输出电压上限(V)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="mylineedit" name="lineEdit_GfTotalVoltUp">
+         <property name="text">
+          <string>350.0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>功放总输出电流上限(A)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="mylineedit" name="lineEdit_GfTotalCurrentUp">
+         <property name="text">
+          <string>3400.0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>460</y>
+     <width>141</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QPushButton" name="okBtn">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>保 存</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelBtn">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>返 回</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>mylineedit</class>
+   <extends>QLineEdit</extends>
+   <header>mylineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

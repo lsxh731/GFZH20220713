@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dcsetDialog</class>
+ <widget class="QDialog" name="dcsetDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>直流调节</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>dcset.png</normaloff>dcset.png</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>726</width>
+     <height>328</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_19">
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_18">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放01（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_01">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn01">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放02（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_02">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn02">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放03（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_03">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn03">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放04（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_04">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn04">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放05（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_05">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn05">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放06（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_06">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn06">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放07（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_07">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn07">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放08（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_08">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn08">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放09（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_09">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn09">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放10（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_10">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn10">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放11（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_11">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn11">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放12（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_12">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn12">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放13（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_13">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn13">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放14（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_14">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn14">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放15（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_15">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn15">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>功放16（V）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="mylineedit" name="lineEdit_16">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adjBtn16">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>调 节</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>10</y>
+     <width>716</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_17">
+    <item>
+     <widget class="QLabel" name="label_17">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>模式</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>单个调节</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>统一调节</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="mylineedit" name="lineEdit">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_18">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>V</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="setBtn">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>设 置</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>18</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="adjBtn">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>调 节</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>18</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>数字键</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>mylineedit</class>
+   <extends>QLineEdit</extends>
+   <header>mylineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

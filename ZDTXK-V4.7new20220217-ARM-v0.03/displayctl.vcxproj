@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D9610E1-2CB4-307F-B957-935B00A4B35C}</ProjectGuid>
+    <RootNamespace>displayctl</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>displayctl</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>displayctl</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">displayctl</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">displayctl</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\Qt3Support;$(QTDIR)\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;Qwt-6.0.0\include;$(QTDIR)\include\ActiveQt;debug;.;$(QTDIR)\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DLL;QWT_DLL;QT_DEBUG;QT_DLL;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;QtGui4.lib;QtCore4.lib;qwt6.lib;QtNetwork4.lib;Qt3Supportd4.lib;QtGuid4.lib;QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR);C:\qt\MySQLServer5.0\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\displayctl.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DLL;QWT_DLL;QT_DEBUG;QT_DLL;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\Qt3Support;$(QTDIR)\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;Qwt-6.0.0\include;$(QTDIR)\include\ActiveQt;release;.;$(QTDIR)\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DLL;QWT_DLL;QT_DEBUG;QT_DLL;QT_NO_DEBUG;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;QtGui4.lib;QtCore4.lib;qwt6.lib;QtNetwork4.lib;Qt3Support4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR);C:\qt\MySQLServer5.0\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\displayctl.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DLL;QWT_DLL;QT_DEBUG;QT_DLL;QT_NO_DEBUG;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CANdatarw.cpp" />
+    <ClCompile Include="adjcoefdlg.cpp" />
+    <ClCompile Include="basicparasetdlg.cpp" />
+    <ClCompile Include="chainsetdlg.cpp" />
+    <ClCompile Include="countdownWidget.cpp" />
+    <ClCompile Include="dcsetdlg.cpp" />
+    <ClCompile Include="faultcondWidget.cpp" />
+    <ClCompile Include="gainsetdlg.cpp" />
+    <ClCompile Include="gpiodatarecvthread.cpp" />
+    <ClCompile Include="gpiorw.cpp" />
+    <ClCompile Include="hisCurvePlot.cpp" />
+    <ClCompile Include="hiscurveWidget.cpp" />
+    <ClCompile Include="inifileparse.cpp" />
+    <ClCompile Include="invalidsetdlg.cpp" />
+    <ClCompile Include="judgeprotection.cpp" />
+    <ClCompile Include="keyboarddlg.cpp" />
+    <ClCompile Include="logindlg.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="md5encode.cpp" />
+    <ClCompile Include="mylineedit.cpp" />
+    <ClCompile Include="passwordsetdlg.cpp" />
+    <ClCompile Include="plotuserclass.cpp" />
+    <ClCompile Include="runningstatusWidget.cpp" />
+    <ClCompile Include="syssetdlg.cpp" />
+    <ClCompile Include="tempermonitorWidget.cpp" />
+    <ClCompile Include="thresholdsetdlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CANdatarw.h" />
+    <CustomBuild Include="adjcoefdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;adjcoefdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 adjcoefdlg.h -o debug\moc_adjcoefdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC adjcoefdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_adjcoefdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;adjcoefdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 adjcoefdlg.h -o release\moc_adjcoefdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC adjcoefdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_adjcoefdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="basicparasetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;basicparasetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 basicparasetdlg.h -o debug\moc_basicparasetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC basicparasetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_basicparasetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;basicparasetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 basicparasetdlg.h -o release\moc_basicparasetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC basicparasetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_basicparasetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="chainsetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;chainsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 chainsetdlg.h -o debug\moc_chainsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC chainsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_chainsetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;chainsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 chainsetdlg.h -o release\moc_chainsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC chainsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_chainsetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="commmacro.h" />
+    <CustomBuild Include="countdownWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;countdownWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 countdownWidget.h -o debug\moc_countdownWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC countdownWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_countdownWidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;countdownWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 countdownWidget.h -o release\moc_countdownWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC countdownWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_countdownWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dcsetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;dcsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 dcsetdlg.h -o debug\moc_dcsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dcsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_dcsetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;dcsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 dcsetdlg.h -o release\moc_dcsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dcsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_dcsetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="faultcondWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;faultcondWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 faultcondWidget.h -o debug\moc_faultcondWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC faultcondWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_faultcondWidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;faultcondWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 faultcondWidget.h -o release\moc_faultcondWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC faultcondWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_faultcondWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gainsetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;gainsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 gainsetdlg.h -o debug\moc_gainsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC gainsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_gainsetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;gainsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 gainsetdlg.h -o release\moc_gainsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC gainsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_gainsetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="gpiodatarecvthread.h" />
+    <ClInclude Include="gpiorw.h" />
+    <CustomBuild Include="hisCurvePlot.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;hisCurvePlot.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 hisCurvePlot.h -o debug\moc_hisCurvePlot.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC hisCurvePlot.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_hisCurvePlot.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;hisCurvePlot.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 hisCurvePlot.h -o release\moc_hisCurvePlot.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC hisCurvePlot.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_hisCurvePlot.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="hiscurveWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;hiscurveWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 hiscurveWidget.h -o debug\moc_hiscurveWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC hiscurveWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_hiscurveWidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;hiscurveWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 hiscurveWidget.h -o release\moc_hiscurveWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC hiscurveWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_hiscurveWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="inifileparse.h" />
+    <CustomBuild Include="invalidsetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;invalidsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 invalidsetdlg.h -o debug\moc_invalidsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC invalidsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_invalidsetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;invalidsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 invalidsetdlg.h -o release\moc_invalidsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC invalidsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_invalidsetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="judgeprotection.h" />
+    <CustomBuild Include="keyboarddlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;keyboarddlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 keyboarddlg.h -o debug\moc_keyboarddlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC keyboarddlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_keyboarddlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;keyboarddlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 keyboarddlg.h -o release\moc_keyboarddlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC keyboarddlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_keyboarddlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="logindlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;logindlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 logindlg.h -o debug\moc_logindlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC logindlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_logindlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;logindlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 logindlg.h -o release\moc_logindlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC logindlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_logindlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="md5encode.h" />
+    <CustomBuild Include="mylineedit.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;mylineedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 mylineedit.h -o debug\moc_mylineedit.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mylineedit.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_mylineedit.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;mylineedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 mylineedit.h -o release\moc_mylineedit.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mylineedit.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_mylineedit.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="passwordsetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;passwordsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 passwordsetdlg.h -o debug\moc_passwordsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC passwordsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_passwordsetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;passwordsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 passwordsetdlg.h -o release\moc_passwordsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC passwordsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_passwordsetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="plotuserclass.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;plotuserclass.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 plotuserclass.h -o debug\moc_plotuserclass.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC plotuserclass.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_plotuserclass.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;plotuserclass.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 plotuserclass.h -o release\moc_plotuserclass.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC plotuserclass.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_plotuserclass.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="runningstatusWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;runningstatusWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 runningstatusWidget.h -o debug\moc_runningstatusWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC runningstatusWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_runningstatusWidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;runningstatusWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 runningstatusWidget.h -o release\moc_runningstatusWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC runningstatusWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_runningstatusWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="syssetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;syssetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 syssetdlg.h -o debug\moc_syssetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC syssetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_syssetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;syssetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 syssetdlg.h -o release\moc_syssetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC syssetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_syssetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tempermonitorWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;tempermonitorWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 tempermonitorWidget.h -o debug\moc_tempermonitorWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC tempermonitorWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_tempermonitorWidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;tempermonitorWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 tempermonitorWidget.h -o release\moc_tempermonitorWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC tempermonitorWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_tempermonitorWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="thresholdsetdlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;thresholdsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"debug" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 thresholdsetdlg.h -o debug\moc_thresholdsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC thresholdsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_thresholdsetdlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;thresholdsetdlg.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DLL -DQWT_DLL -DQT_DEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\Qt3Support" -I"$(QTDIR)\include" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtCore" -I"Qwt-6.0.0\include" -I"$(QTDIR)\include\ActiveQt" -I"release" -I"." -I$(QTDIR)\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 thresholdsetdlg.h -o release\moc_thresholdsetdlg.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC thresholdsetdlg.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_thresholdsetdlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_adjcoefdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_adjcoefdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_basicparasetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_basicparasetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_chainsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_chainsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_countdownWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_countdownWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_dcsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_dcsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_faultcondWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_faultcondWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_gainsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_gainsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hisCurvePlot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hisCurvePlot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hiscurveWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hiscurveWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_invalidsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_invalidsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_keyboarddlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_keyboarddlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_logindlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_logindlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mylineedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mylineedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_passwordsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_passwordsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_plotuserclass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_plotuserclass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_runningstatusWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_runningstatusWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_syssetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_syssetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_tempermonitorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_tempermonitorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_thresholdsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_thresholdsetdlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_adjcoef.h" />
+    <ClInclude Include="ui_basicparaset.h" />
+    <ClInclude Include="ui_chainset.h" />
+    <ClInclude Include="ui_countdown.h" />
+    <ClInclude Include="ui_dcset.h" />
+    <ClInclude Include="ui_faultcondition.h" />
+    <ClInclude Include="ui_gainset.h" />
+    <ClInclude Include="ui_hiscurve.h" />
+    <ClInclude Include="ui_invalidset.h" />
+    <ClInclude Include="ui_keyboard.h" />
+    <ClInclude Include="ui_login.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_passwordset.h" />
+    <ClInclude Include="ui_runningstatus.h" />
+    <ClInclude Include="ui_sysset.h" />
+    <ClInclude Include="ui_temperaturemonitor.h" />
+    <ClInclude Include="ui_test.h" />
+    <ClInclude Include="ui_thresholdset.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="adjcoef.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;adjcoef.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe adjcoef.ui -o ui_adjcoef.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC adjcoef.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_adjcoef.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;adjcoef.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe adjcoef.ui -o ui_adjcoef.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC adjcoef.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_adjcoef.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="basicparaset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;basicparaset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe basicparaset.ui -o ui_basicparaset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC basicparaset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_basicparaset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;basicparaset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe basicparaset.ui -o ui_basicparaset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC basicparaset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_basicparaset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="chainset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;chainset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe chainset.ui -o ui_chainset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC chainset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_chainset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;chainset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe chainset.ui -o ui_chainset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC chainset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_chainset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="countdown.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;countdown.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe countdown.ui -o ui_countdown.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC countdown.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_countdown.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;countdown.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe countdown.ui -o ui_countdown.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC countdown.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_countdown.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dcset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;dcset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe dcset.ui -o ui_dcset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC dcset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dcset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;dcset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe dcset.ui -o ui_dcset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC dcset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dcset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="faultcondition.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;faultcondition.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe faultcondition.ui -o ui_faultcondition.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC faultcondition.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_faultcondition.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;faultcondition.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe faultcondition.ui -o ui_faultcondition.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC faultcondition.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_faultcondition.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gainset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;gainset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe gainset.ui -o ui_gainset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC gainset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_gainset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;gainset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe gainset.ui -o ui_gainset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC gainset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_gainset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="hiscurve.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;hiscurve.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe hiscurve.ui -o ui_hiscurve.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC hiscurve.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_hiscurve.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;hiscurve.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe hiscurve.ui -o ui_hiscurve.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC hiscurve.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_hiscurve.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="invalidset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;invalidset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe invalidset.ui -o ui_invalidset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC invalidset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_invalidset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;invalidset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe invalidset.ui -o ui_invalidset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC invalidset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_invalidset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="keyboard.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;keyboard.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe keyboard.ui -o ui_keyboard.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC keyboard.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_keyboard.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;keyboard.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe keyboard.ui -o ui_keyboard.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC keyboard.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_keyboard.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="login.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;login.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe login.ui -o ui_login.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC login.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_login.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;login.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe login.ui -o ui_login.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC login.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_login.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="passwordset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;passwordset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe passwordset.ui -o ui_passwordset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC passwordset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_passwordset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;passwordset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe passwordset.ui -o ui_passwordset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC passwordset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_passwordset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="runningstatus.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;runningstatus.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe runningstatus.ui -o ui_runningstatus.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC runningstatus.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_runningstatus.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;runningstatus.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe runningstatus.ui -o ui_runningstatus.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC runningstatus.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_runningstatus.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="sysset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;sysset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe sysset.ui -o ui_sysset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC sysset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_sysset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;sysset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe sysset.ui -o ui_sysset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC sysset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_sysset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="temperaturemonitor.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;temperaturemonitor.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe temperaturemonitor.ui -o ui_temperaturemonitor.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC temperaturemonitor.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_temperaturemonitor.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;temperaturemonitor.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe temperaturemonitor.ui -o ui_temperaturemonitor.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC temperaturemonitor.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_temperaturemonitor.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;test.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe test.ui -o ui_test.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC test.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_test.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;test.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe test.ui -o ui_test.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC test.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_test.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="thresholdset.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;thresholdset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe thresholdset.ui -o ui_thresholdset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC thresholdset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_thresholdset.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;thresholdset.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe thresholdset.ui -o ui_thresholdset.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC thresholdset.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_thresholdset.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties QtVersion_x0020_Win32="4.8.5" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
