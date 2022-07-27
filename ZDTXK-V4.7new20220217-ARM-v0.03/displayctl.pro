@@ -101,3 +101,6 @@ LIBS +=  -L$(QTDIR) -lQtGui -lQtCore  -lqwt6  -lQtNetwork
 
 DISTFILES +=
 
+RESOURCES += \
+    image.qrc
+

@@ -2474,7 +2474,8 @@ bool CJudgeProc::newCheckExterProcExist(STRU_NEWCHASETDATA stru_newChainSetData,
     }
     else
         g_newfaultstatus.iESTOPFlag=LED_GREEN;
-    if(g_newfaultstatus.iFaultValue[19]==0)
+//    if(g_newfaultstatus.iFaultValue[19]==0)
+    if(g_newfaultstatus.iFaultValue[19]==1)   //change by zw 20220719
     {
         if(stru_newChainSetData.iXtlqVal==SWITCH_ON)
             {

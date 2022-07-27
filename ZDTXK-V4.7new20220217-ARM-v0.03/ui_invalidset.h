@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'invalidset.ui'
 **
-** Created: Thu Jul 7 23:40:55 2022
+** Created: Tue Jul 26 18:35:31 2022
 **      by: Qt User Interface Compiler version 4.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

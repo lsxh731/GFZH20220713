@@ -673,18 +673,18 @@ typedef struct STRU_SIMUPROCSET
 #define TPH_C         2
 
 //AD ratio
-#define ADK100  1.0
-#define ADK101  1.0
-#define ADK102  1.0
-#define ADK103  1.0
-#define ADK104  1.0
+#define ADK100  758.5
+#define ADK101  758.5
+#define ADK102  758.5
+#define ADK103  758.5
+#define ADK104  100.0
 #define ADK105  1.0
 #define ADK106  1.0
-#define ADK107A 1.0
-#define ADK107B 1.0
-#define ADK107C 1.0
+#define ADK107A 81.9
+#define ADK107B 81.9
+#define ADK107C 81.9
 
-#define ADK200  1.0
+#define ADK200  100.0
 #define ADK201  100.0
 #define ADK202  1.0
 #define ADK203  1.0

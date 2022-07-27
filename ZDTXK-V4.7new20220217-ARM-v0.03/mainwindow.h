@@ -138,6 +138,8 @@ private:
         void updateDI(int nDIValue,
             QToolButton *ToolButton);             //更新开关量数据
 
+        void newupdateDI(int nDIValue,
+                         QLabel *qlabel);  //add by zw 20220722
         void showSlaveRTdata();	  //显示分柜实时数据
         void showPowerAmpRTdata(void);            //显示功放实时数据
         void initProctype();                      //初始化保护类型数据

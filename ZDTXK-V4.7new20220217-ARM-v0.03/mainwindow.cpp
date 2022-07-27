@@ -111,10 +111,10 @@ CMymainWindow::CMymainWindow()
     connect(m_pUi->toolButton_RunningSta,SIGNAL(clicked()),this,SLOT(runningStaBtn_clicked()));
     connect(m_pUi->syssetBtn,SIGNAL(clicked()),this,SLOT (syssetBtn_clicked()));//"系统设置"槽函数 add by 2020.08.10
 //	connect(m_pUi->OutLogBtn,SIGNAL(clicked()),this,SLOT (OutLogBtn_clicked()));//"输出日志"槽函数 add by 2020.11.12
-
+    //change by zw xxx.png from 128x128 to 60x60
     m_greenicon.addFile(QString::fromUtf8(QApplication::applicationDirPath()+"/"+"gct_ied_green.png"), QSize(), QIcon::Normal, QIcon::Off);
     m_redicon.addFile(QString::fromUtf8(QApplication::applicationDirPath()+"/"+"gct_ied_red.png"), QSize(), QIcon::Normal, QIcon::Off);
-    m_yellowicon.addFile(QString::fromUtf8(QApplication::applicationDirPath()+"/"+"gct_ied_yellow.png"), QSize(), QIcon::Normal, QIcon::Off);
+    m_yellowicon.addFile(QString::fromUtf8(QApplication::applicationDirPath()+"/"+"gct_ied_blank.png"), QSize(), QIcon::Normal, QIcon::Off);
 
     initHomePage();
     initStatusPage();
@@ -1532,40 +1532,40 @@ void CMymainWindow::showSlaveRTdata()
     updateSlaveStatusData(g_newaddata.iSlaveStaValue[2],m_iSubopenFlag[2],m_pUi->toolButton_fgstatus_3);
     updateSlaveStatusData(g_newaddata.iSlaveStaValue[3],m_iSubopenFlag[3],m_pUi->toolButton_fgstatus_4);
     QString strTempVer;
-    strTempVer= QString::number(g_newaddata.fSlave1VolDC,'f',2);
+    strTempVer= QString::number(g_newaddata.fTotalVolDC,'f',2);
     m_pUi->slavevolt_label_1->display(strTempVer);  //显示分柜1电压
 
     strTempVer= QString::number(g_newaddata.fSlave1CurDC,'f',2);
     m_pUi->slavecurrent_label_1->display(strTempVer);//显示分柜1电流
 
-    strTempVer= QString::number(g_GPIOData.fSlaveBusVolt[0],'f',0);
+    strTempVer= QString::number(g_newaddata.fSlave1VolDC,'f',0);
     m_pUi->busvolt_label_1->setText(strTempVer); //显示f分柜1正负母线电压
 
-    strTempVer= QString::number(g_newaddata.fSlave2VolDC,'f',2);
+    strTempVer= QString::number(g_newaddata.fTotalVolDC,'f',2);
     m_pUi->slavevolt_label_2->display(strTempVer);  //显示分柜2电压
 
     strTempVer= QString::number(g_newaddata.fSlave2CurDC,'f',2);
     m_pUi->slavecurrent_label_2->display(strTempVer);//显示分柜2电流
 
-    strTempVer= QString::number(g_GPIOData.fSlaveBusVolt[1],'f',0);
+    strTempVer= QString::number(g_newaddata.fSlave2VolDC,'f',0);
     m_pUi->busvolt_label_2->setText(strTempVer); //显示分柜2正负母线电压
 
-    strTempVer= QString::number(g_newaddata.fSlave3VolDC,'f',2);
+    strTempVer= QString::number(g_newaddata.fTotalVolDC,'f',2);
     m_pUi->slavevolt_label_3->display(strTempVer);  //显示分柜3电压
 
     strTempVer= QString::number(g_newaddata.fSlave3CurDC,'f',2);
     m_pUi->slavecurrent_label_3->display(strTempVer);//显示分柜3电流
 
-    strTempVer= QString::number(g_GPIOData.fSlaveBusVolt[2],'f',0);
+    strTempVer= QString::number(g_newaddata.fSlave3VolDC,'f',0);
     m_pUi->busvolt_label_3->setText(strTempVer); //显示分柜3正负母线电压
 
-    strTempVer= QString::number(g_newaddata.fSlave4VolDC,'f',2);
+    strTempVer= QString::number(g_newaddata.fTotalVolDC,'f',2);
     m_pUi->slavevolt_label_4->display(strTempVer);  //显示分柜4电压
 
     strTempVer= QString::number(g_newaddata.fSlave4CurDC,'f',2);
     m_pUi->slavecurrent_label_4->display(strTempVer);//显示分柜4电流
 
-    strTempVer= QString::number(g_GPIOData.fSlaveBusVolt[3],'f',0);
+    strTempVer= QString::number(g_newaddata.fSlave4VolDC,'f',0);
     m_pUi->busvolt_label_4->setText(strTempVer); //显示分柜4正负母线电压
 #endif
 #endif  //Compiler Switch
@@ -1578,15 +1578,15 @@ void CMymainWindow::showPowerAmpRTdata()
     //更新运行状态灯
     //updateStatusData(g_GPIOData.iRunningState,m_pUi->toolButton_yxstatus);
     //更新冷却状态灯
-    updateStatusData(g_GPIOData.iCoolingState,m_pUi->toolButton_lqstatus);
+//    updateStatusData(g_GPIOData.iCoolingState,m_pUi->toolButton_lqstatus);
     //更新励磁状态灯
-    updateStatusData(g_GPIOData.iExcitationState,m_pUi->toolButton_licistatus);
+//    updateStatusData(g_GPIOData.iExcitationState,m_pUi->toolButton_licistatus);
     //更新准备状态灯
-    updateStatusData(g_GPIOData.iReadyState,m_pUi->toolButton_readystatus);
+//    updateStatusData(g_GPIOData.iReadyState,m_pUi->toolButton_readystatus);
     //更新增益状态灯
-    updateStatusData(g_GPIOData.iGainState,m_pUi->toolButton_zengyistatus);
+//    updateStatusData(g_GPIOData.iGainState,m_pUi->toolButton_zengyistatus);
     //更新故障状态灯
-    updateStatusData(g_GPIOData.iFaultState,m_pUi->toolButton_faultstatus);
+//    updateStatusData(g_GPIOData.iFaultState,m_pUi->toolButton_faultstatus);
 
     QString strTempVer;
     strTempVer= QString::number(g_GPIOData.fTotalVolt,'f',0);
@@ -1614,15 +1614,20 @@ void CMymainWindow::showPowerAmpRTdata()
     //更新运行状态灯
     //updateStatusData(g_GPIOData.iRunningState,m_pUi->toolButton_yxstatus);
     //更新冷却状态灯
-    updateDI(g_newaddata.iCoolingState,m_pUi->toolButton_lqstatus);
+//    updateDI(g_newaddata.iCoolingState,m_pUi->toolButton_lqstatus);
+      newupdateDI(g_newaddata.iCoolingState,m_pUi->label_lqstatus);
     //更新励磁状态灯
-    updateDI(g_newaddata.iExcitationState,m_pUi->toolButton_licistatus);
+//    updateDI(g_newaddata.iExcitationState,m_pUi->toolButton_licistatus);
+      newupdateDI(g_newaddata.iExcitationState,m_pUi->label_licistatus);
     //更新准备状态灯
-    updateDI(g_newaddata.iReadyState,m_pUi->toolButton_readystatus);
+//    updateDI(g_newaddata.iReadyState,m_pUi->toolButton_readystatus);
+      newupdateDI(g_newaddata.iReadyState,m_pUi->label_readystatus);
     //更新增益状态灯
-    updateDI(g_newaddata.iGainState,m_pUi->toolButton_zengyistatus);
+//    updateDI(g_newaddata.iGainState,m_pUi->toolButton_zengyistatus);
+      newupdateDI(g_newaddata.iGainState,m_pUi->label_zengyistatus);
     //更新故障状态灯
-    updateDI(g_newaddata.iFaultState,m_pUi->toolButton_faultstatus);
+//    updateDI(g_newaddata.iFaultState,m_pUi->toolButton_faultstatus);
+      newupdateDI(g_newaddata.iFaultState,m_pUi->label_faultstatus);
 
     QString strTempVer;
     strTempVer= QString::number(g_newaddata.fTotalVolDC,'f',0);
@@ -1684,15 +1689,25 @@ void CMymainWindow::initHomePage()
     //设置"运行状态"图标
     //m_pUi->toolButton_yxstatus->setIcon(m_yellowicon);
     //设置冷却状态"图标
-    m_pUi->toolButton_lqstatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_lqstatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_lqstatus->setIconSize(QSize(52, 52));
+    m_pUi->label_lqstatus->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_gray.png)");
     //设置"励磁状态"图标
-    m_pUi->toolButton_licistatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_licistatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_licistatus->setIconSize(QSize(52, 52));
+    m_pUi->label_licistatus->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_gray.png)");
     //设置"准备状态"图标
-    m_pUi->toolButton_readystatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_readystatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_readystatus->setIconSize(QSize(52, 52));
+    m_pUi->label_readystatus->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_gray.png)");
     //设置"增益状态"图标
-    m_pUi->toolButton_zengyistatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_zengyistatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_zengyistatus->setIconSize(QSize(52, 52));
+    m_pUi->label_zengyistatus->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_gray.png)");
     //设置"故障状态"图标
-    m_pUi->toolButton_faultstatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_faultstatus->setIcon(m_yellowicon);
+//    m_pUi->toolButton_faultstatus->setIconSize(QSize(52, 52));
+    m_pUi->label_faultstatus->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_gray.png)");
     m_pUi->horizontalScrollBar->setEnabled(false);//禁用滑块，add by 2019.05.29
     m_pUi->comboBox_gear->setEnabled(false);//禁用挡位选择，add by 2019.05.29
 
@@ -1954,6 +1969,8 @@ void CMymainWindow::initHomePage()
          m_newAdjcoef.fCustom12B = COMMON_B;
      }
      memcpy(&g_newAdjcoef,&m_newAdjcoef,sizeof(m_newAdjcoef));
+     m_pUi->pushButton_EN->setText(tr("EN"));  //add by zw 20220727
+
 }
 //@@@
 void  CMymainWindow::mainLangchange()
@@ -2610,6 +2627,25 @@ void CMymainWindow::updateDI(int nDIValue,QToolButton *ToolButton)
     }//switch(nDIValue)
      QCoreApplication::processEvents();//避免界面冻结
 }
+//add by zw 20220722
+void CMymainWindow::newupdateDI(int nDIValue, QLabel *qlabel)
+{
+    switch(nDIValue)
+    {
+    case 0:
+        qlabel->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_red.png)");
+        break;
+    case 1:
+        qlabel->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_green.png)");
+        break;
+    default:
+        qlabel->setStyleSheet("border-radius:8px;border-image:url(:/gct_ied_gray.png)");
+        break;
+    }//switch(nDIValue)
+     QCoreApplication::processEvents();//避免界面冻结
+}
+
+
 //更新从柜运行状态
 void CMymainWindow::updateSlaveStatusData(int nStaValue,int nSubopen,QToolButton *ToolButton)
 {
@@ -2769,7 +2805,9 @@ void CMymainWindow::gfstartBtn_clicked()
 void CMymainWindow::gfstopBtn_clicked()
 {
     //关闭蜂鸣器
+#ifdef UBUNTU_DEV
     ioctl(fd_beep,0,0);
+#endif
     m_pUi->toolButton_gfstop->setEnabled(false);//禁止状态
     m_pUi->toolButton_Set->setEnabled(true);//功放停止后启用设置功能，add by 2020.08.21
     m_GfStopFlag=true;
@@ -4283,7 +4321,9 @@ void CMymainWindow::OperationSection2()
     g_newaddata.iFaultState = LED_RED;//点亮主界面故障灯
     g_newaddata.iCoolingState = LED_YELLOW;//冷却系统灯灭
     //蜂鸣器响，待完善代码
+#ifdef UBUNTU_DEV
     ioctl(fd_beep,1,0);
+#endif
 
 #endif
     //T2:断开所有继电器；软件关闭使能
@@ -4452,6 +4492,10 @@ void CMymainWindow::ShowChainSetStatus()
     updateChainStatusButton(nValue,m_pUi->toolButton_jjtjchain);
     //S紧急停机
     nValue=g_newfaultstatus.iSESTOPFlag;
+//    if(nValue == 1)
+//        nValue = 0;
+//    else if(nValue == 0)
+//        nValue = 1;
     updateDI(nValue,m_pUi->toolButton_sjjtj);
     nValue=g_newchasetdata.iSJitiVal;
     updateChainStatusButton(nValue,m_pUi->toolButton_sjjtjchain);
@@ -6093,7 +6137,8 @@ void CMymainWindow::languageCN()
     m_pUi->pushButton_EN->setEnabled(true);
     m_pUi->pushButton_EN->setDown(false);
     m_pUi->pushButton_CN->setText(QApplication::translate("mainWindow", "\344\270\255\346\226\207", 0, QApplication::UnicodeUTF8));
-    m_pUi->pushButton_EN->setText(QApplication::translate("mainWindow", "\350\213\261\346\226\207", 0, QApplication::UnicodeUTF8));
+    m_pUi->pushButton_EN->setText(tr("EN"));
+//    m_pUi->pushButton_EN->setText(QApplication::translate("mainWindow", "\350\213\261\346\226\207", 0, QApplication::UnicodeUTF8));
     m_strMainWindow=QApplication::translate("mainWindow",
         "\344\270\273\347\225\214\351\235\242", 0, QApplication::UnicodeUTF8);
     m_strSubcabinetctl=QApplication::translate("mainWindow",
@@ -6456,7 +6501,8 @@ void CMymainWindow::languageEN()
     m_pUi->pushButton_EN->setEnabled(false);
     m_pUi->pushButton_EN->setDown(true);
     //MainWindow下tabWidget语言切换
-    m_pUi->pushButton_CN->setText(tr("CN"));
+//    m_pUi->pushButton_CN->setText(tr("CN"));
+    m_pUi->pushButton_CN->setText(QApplication::translate("mainWindow", "\344\270\255\346\226\207", 0, QApplication::UnicodeUTF8));
     m_pUi->pushButton_EN->setText(tr("EN"));
 
     m_pUi->toolButton_Home->setText(tr("Home"));       //主界面（简写 by 2020.04.19）
