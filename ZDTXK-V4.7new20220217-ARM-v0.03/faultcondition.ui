@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>faultconditionForm</class>
+ <widget class="QWidget" name="faultconditionForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>882</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>故障状态</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo_top.png</normaloff>logo_top.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox_8">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>19</y>
+     <width>674</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>模块组号选择</string>
+   </property>
+   <widget class="QRadioButton" name="radioButton0506">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块05-06</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton0910">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块09-10</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton1314">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块13-14</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton0708">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>20</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块07-08</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton0304">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块03-04</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton0102">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块01-02</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton1112">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>50</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块11-12</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton1516">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>50</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>模块15-16</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="faultstatus_groupBox01">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>421</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>模块1</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>401</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QToolButton" name="toolButton_73">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_164">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电源欠压</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QToolButton" name="toolButton_81">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_172">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT过温保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QToolButton" name="toolButton_75">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_166">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>母线电压过低</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QToolButton" name="toolButton_80">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_171">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT1驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QToolButton" name="toolButton_113">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_204">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电压报警</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QToolButton" name="toolButton_82">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_173">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT2驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QToolButton" name="toolButton_71">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_162">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电压过高</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QToolButton" name="toolButton_84">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_175">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT3驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QToolButton" name="toolButton_77">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_168">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电流报警</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QToolButton" name="toolButton_86">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_177">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT4驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QToolButton" name="toolButton_79">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_170">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电流过高</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QToolButton" name="toolButton_88">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLabel" name="label_179">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT5驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QToolButton" name="toolButton_85">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_176">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电感温度过高</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QToolButton" name="toolButton_90">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLabel" name="label_181">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT6驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QToolButton" name="toolButton_89">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_180">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>驱动脉冲封锁</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QToolButton" name="toolButton_72">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="label_163">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QToolButton" name="toolButton_83">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="label_174">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QToolButton" name="toolButton_74">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLabel" name="label_165">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QToolButton" name="toolButton_87">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="label_178">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QToolButton" name="toolButton_76">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLabel" name="label_167">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QToolButton" name="toolButton_91">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="label_182">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QToolButton" name="toolButton_78">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3">
+      <widget class="QLabel" name="label_169">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义7</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="faultstatus_groupBox02">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>100</y>
+     <width>431</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>模块2</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>411</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QToolButton" name="toolButton_94">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_185">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电源欠压</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QToolButton" name="toolButton_102">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_193">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT过温保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QToolButton" name="toolButton_96">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_187">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>母线电压过低</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QToolButton" name="toolButton_101">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_192">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT1驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QToolButton" name="toolButton_114">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_205">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电压报警</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QToolButton" name="toolButton_103">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_194">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT2驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QToolButton" name="toolButton_92">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_183">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电压过高</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QToolButton" name="toolButton_105">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_196">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT3驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QToolButton" name="toolButton_98">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_189">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电流报警</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QToolButton" name="toolButton_107">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_198">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT4驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QToolButton" name="toolButton_100">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_191">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输出电流过高</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QToolButton" name="toolButton_109">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLabel" name="label_200">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT5驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QToolButton" name="toolButton_106">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_197">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电感温度过高</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QToolButton" name="toolButton_111">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLabel" name="label_202">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IGBT6驱动保护</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QToolButton" name="toolButton_110">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_201">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>驱动脉冲封锁</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QToolButton" name="toolButton_93">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="label_184">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QToolButton" name="toolButton_104">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="label_195">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QToolButton" name="toolButton_95">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLabel" name="label_186">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QToolButton" name="toolButton_108">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="label_199">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QToolButton" name="toolButton_97">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLabel" name="label_188">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QToolButton" name="toolButton_112">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="label_203">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QToolButton" name="toolButton_99">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>28</width>
+         <height>28</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3">
+      <widget class="QLabel" name="label_190">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自定义7</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="closeBtn">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>50</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返 回</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

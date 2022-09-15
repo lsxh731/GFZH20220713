@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>runningstatusForm</class>
+ <widget class="QWidget" name="runningstatusForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1011</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>运行状态</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo_top.png</normaloff>logo_top.png</iconset>
+  </property>
+  <widget class="QTableWidget" name="operstatus_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>991</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollBar::vertical
+{
+    width: 35px;
+}
+QScrollBar::horizontal
+{
+    height: 35px;
+}</string>
+   </property>
+   <row>
+    <property name="text">
+     <string>模块01</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块02</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块03</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块04</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块05</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块06</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块07</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块08</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块09</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块10</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块11</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块12</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块13</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块14</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块15</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>模块16</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>时间</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>重启过程中</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>正常运行</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>故障保护中</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>故障闭锁</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>已保护次数</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>封锁脉冲</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>收到启动信号</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>收到关机信号</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="closeBtn">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>527</y>
+     <width>93</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>128</width>
+     <height>128</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>返 回</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>128</width>
+     <height>128</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

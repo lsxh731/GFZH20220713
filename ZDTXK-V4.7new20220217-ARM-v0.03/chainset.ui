@@ -1,0 +1,3385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chainsetDialog</class>
+ <widget class="QDialog" name="chainsetDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>919</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>连锁屏蔽设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>chainset.png</normaloff>chainset.png</iconset>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>971</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(53, 98, 132);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_32">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>260</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_selfdefine1">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>自定义1</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_selfdefine1">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_16">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>167</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>101</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>振动台过温</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_zdtgw">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_zdtgw">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_17">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>124</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="comboBox_gfrjbh">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QToolButton" name="toolButton_gfrjbh">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>关</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>功放热继保护</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_33">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>212</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_34">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>39</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_zgmenbh">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>主柜门保护      </string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_zgmenbh">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_26">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>356</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="comboBox_htqyw">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>滑台欠液位</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_htqyw">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>关</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="okBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 225, 255);</string>
+    </property>
+    <property name="text">
+     <string>确 定</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>124</y>
+      <width>295</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>系统冷却单元</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_xtlqdy">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>关</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_xtlqdy">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_37">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>404</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="comboBox_selfdefine4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QToolButton" name="toolButton_selfdefine4">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>81</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>自定义4</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>全部屏蔽</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>模式</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_36">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>356</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_selfdefine3">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>81</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>自定义3</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_selfdefine3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="toolButton_tongyi">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>73</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>关</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>66</width>
+      <height>48</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_29">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>167</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_30">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>361</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 120);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>120</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>滑台过位移</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_htgwy_4">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>39</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_htgwychain_3">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>73</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_31">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>361</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 101);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_49">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>96</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>紧急停机</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_jjtj_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>39</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_jjtjchain_3">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>73</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QToolButton" name="toolButton_jyzcdy">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>静压轴承低压</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_jyzcdy">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_27">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>404</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="comboBox_htgw">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>滑台过温</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_htgw">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_35">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>308</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_selfdefine2">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>81</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>自定义2</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_selfdefine2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_24">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>308</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>滑台欠压</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_htqy">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>关</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_htqy">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_23">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_25">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>39</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>-126</y>
+       <width>211</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>系统冷却单元</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_39">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>48</y>
+       <width>420</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 120);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>211</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>滑台轴承低压</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_htzcdy_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>0</y>
+        <width>73</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_40">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>-48</y>
+       <width>420</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 120);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_43">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>361</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(2, 59, 120);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_60">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>120</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>滑台过位移</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_htgwy_5">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>10</y>
+         <width>39</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_htgwychain_4">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>0</y>
+         <width>73</width>
+         <height>54</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>关</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>66</width>
+         <height>48</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_44">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>361</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(2, 59, 101);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>96</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>紧急停机</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_jjtj_4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>10</y>
+         <width>39</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_jjtjchain_4">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>0</y>
+         <width>73</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>关</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>66</width>
+         <height>48</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>211</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>振动台过位移</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>-83</y>
+       <width>211</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>滑台过位移</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_htgwy">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>滑台过位移</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_htgwy">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_19">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>212</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_21">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>361</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 120);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_58">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>120</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>滑台过位移</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_htgwy_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>39</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_htgwychain_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>73</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_22">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>361</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 101);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_48">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>96</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>紧急停机</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_jjtj_2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>39</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_jjtjchain_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>73</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>振动台过位移</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_zdtgwy">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>关</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_zdtgwy">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>140</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="debugBtn">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 225, 255);</string>
+    </property>
+    <property name="text">
+     <string>调试</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="normalBtn">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 225, 255);</string>
+    </property>
+    <property name="text">
+     <string>正常</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeBtn">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 225, 255);</string>
+    </property>
+    <property name="text">
+     <string>返 回</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>90</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>联锁屏蔽</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>90</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>联锁屏蔽</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>90</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>触点切换</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>545</x>
+      <y>90</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>触点切换</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_45">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>124</y>
+      <width>295</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_c1zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜1整流器过温</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c1zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>90</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>触点切换</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>90</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>联锁屏蔽</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_46">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>452</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_c4cwbh">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜4错误保护 </string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c4cwbh">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_47">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>404</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_c3cwbh">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜3错误保护</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c3cwbh">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_18">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>167</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_c2zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>关</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜2整流器过温</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c2zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_48">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>308</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_c1cwbh">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜1错误保护</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c1cwbh">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_49">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>212</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 120);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_50">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>361</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 120);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_61">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>120</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>滑台过位移</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_htgwy_6">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>39</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_htgwychain_5">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>73</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_51">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>361</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 59, 101);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_51">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>96</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>紧急停机</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_jjtj_5">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>39</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>gct_ied_green.png</normaloff>gct_ied_green.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_jjtjchain_5">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>73</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>yb_on.png</normaloff>yb_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QToolButton" name="toolButton_c3zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜3整流器过温</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c3zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_52">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>260</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_53">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>39</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_c4zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜4整流器过温</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c4zlqgw">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_54">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>356</y>
+      <width>295</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(2, 59, 101);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_c2cwbh">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>5</y>
+       <width>73</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>yb_off.png</normaloff>yb_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>66</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>从柜2错误保护</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_c2cwbh">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>5</y>
+       <width>65</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 225, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>常开</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>常闭</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>0</width>
+     <height>0</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

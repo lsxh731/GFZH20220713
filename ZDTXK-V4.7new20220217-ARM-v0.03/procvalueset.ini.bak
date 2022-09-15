@@ -1,0 +1,15 @@
+[outputvolt]
+outvolt_low=0.00
+outvolt_up=1000.00
+[dcvoltover]
+dcvolt_low=0.00
+dcvolt_up=1000.00
+[outputcurrent]
+currprocvalue=0.00
+currwarnvalue=1000.00
+[IGBT]
+IGBT_temper1=0.00
+IGBT_temper2=1000.00
+[IDUCT]
+IDUCT_temper1=0.00
+IDUCT_temper2=1000.00
