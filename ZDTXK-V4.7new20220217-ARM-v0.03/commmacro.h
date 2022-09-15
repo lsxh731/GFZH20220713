@@ -1,8 +1,8 @@
 #ifndef COMM_MACRO_H
 #define COMM_MACRO_H
 
-#define WIN_DEV  //2019.01.18
-//#define UBUNTU_DEV
+//#define WIN_DEV  //2019.01.18
+#define UBUNTU_DEV
 #define NEWCODE_SW //new code running switch by zw 20220223
 
 #ifdef UBUNTU_DEV //Compiler Switch
