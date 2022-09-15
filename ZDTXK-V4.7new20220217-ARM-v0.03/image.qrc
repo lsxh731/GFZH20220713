@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>gct_ied_gray.png</file>
-        <file>gct_ied_green.png</file>
-        <file>gct_ied_red.png</file>
-    </qresource>
-</RCC>
